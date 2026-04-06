@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Lelo Kitchen",
-  description: "Your description here",
+  description: "A world-class chef bringing unforgettable culinary moments to your most important occasions.",
   openGraph: {
     title: "Lelo Kitchen",
-    description: "Your description here",
+    description: "A world-class chef bringing unforgettable culinary moments to your most important occasions.",
     url: "https://lelo-kitchen.vercel.app",
     images: [
       {
