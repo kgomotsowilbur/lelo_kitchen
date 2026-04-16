@@ -16,8 +16,17 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
-    // Simulate send
-    await new Promise(r => setTimeout(r, 1500));
+    
+    const {name, email, message, event_type} = form
+
+    await fetch("https://5cd1321ae394ec9b8cfc4b7f58c7e7.4d.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/29be5b14faf24d74b2afe888896f5bb6/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=eAyKpw88hctzC72Cr6td7MJjLUxwLEtJ7WlD3YBg4OY", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        name, email, message, event_type
+      })
+    })
+
     toast.success('Message sent! We\'ll be in touch soon.');
     setForm({ name: '', email: '', message: '', event_type: '' });
     setSending(false);
@@ -71,7 +80,7 @@ export default function Contact() {
                 <div className="glass-strong w-12 h-12 rounded-full flex items-center justify-center">
                   <Phone size={18} className="text-primary" />
                 </div>
-                <p className="font-body text-sm text-primary">+27 76 938 0071</p>
+                <p className="font-body text-sm text-primary">+27 76 938 0079</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="glass-strong w-12 h-12 rounded-full flex items-center justify-center">

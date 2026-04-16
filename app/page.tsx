@@ -14,7 +14,7 @@ const IMAGES = {
   chefs: [
     'image1.jpg',
     'image2.jpg',
-    'image3.jpg',
+    'image4.jpeg',
   ],
   gallery: [
     { src: 'https://media.base44.com/images/public/69d0ab81d4665ce09dcba6e9/e1222acb5_generated_a347de16.png', alt: 'Fine dining presentation' },

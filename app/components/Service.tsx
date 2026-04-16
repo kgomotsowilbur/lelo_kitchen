@@ -19,26 +19,21 @@ const SERVICES = [
     icon: Cake,
     title: 'Weddings',
     description: 'From rehearsal dinners to the grand reception, every bite tells your love story.',
-  },
-  {
-    icon: Wine,
-    title: 'Cocktail Soirées',
-    description: 'Artisan canapés and crafted beverages for elegant, flowing social events.',
-  },
+  }
 ];
 
 export default function Services() {
   return (
     <section id="services" className="relative py-32 overflow-hidden">
       {/* Video BG */}
-      <div className="absolute inset-0 opacity-30">
+      {/* <div className="absolute inset-0 opacity-30">
         <LazyVideo
           src="https://videos.pexels.com/video-files/4253233/4253233-uhd_2560_1440_25fps.mp4"
           className="w-full h-full"
           poster=""
         />
-      </div>
-      <div className="absolute inset-0 bg-background/80" />
+      </div> */}
+      {/* <div className="absolute inset-0 bg-background/80" /> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
@@ -56,7 +51,7 @@ export default function Services() {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, i) => (
             <motion.div
               key={service.title}
